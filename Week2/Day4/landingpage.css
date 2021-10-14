@@ -1,0 +1,41 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+nav li {
+    float: right;
+}
+
+.jumbotron {
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313__480.jpg);
+    background-size: 1400px 450px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+}
+
+.lead {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h5 {
+    color: white;
+    font-size: 50px;
+}
+.container {
+    margin-top: 50px;
+
+}
+
+.col {
+    text-align: center;
+}
+
+#badge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
