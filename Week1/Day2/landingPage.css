@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #cbd8e1;
+    height: 70px;
+    
+}
+
+ul {
+    list-style: none;
+    padding-left: 40px;
+    margin: 0px;
+    padding: 20px 40px 20px 40px;
+    font-size: 25px;
+}
+
+ul li{
+    display: inline;
+    vertical-align: middle;
+    
+}
+
+#right {
+    float: right;
+}
+
+#right input{
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+main {
+    height: 25em;
+    background-image: url(https://aunomduvivant.fr/images/0537682001365877725.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+h2 {
+    margin: 0px;
+    padding: 140px 20px 0px 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+main table {
+    margin: 30px auto 0px auto;
+    width: fit-content;
+    display: block;    
+}
+
+td input{
+    font-size: x-large;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+footer table {
+    padding: 70px 225px;
+}
+
+div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer td {
+    text-align: center;
+
+}
+
+footer h5 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+footer p{
+    color: grey;
+}
+

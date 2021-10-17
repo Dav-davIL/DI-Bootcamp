@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://static.fnac-static.com/multimedia/Images/FD/Comete/130864/CCP_IMG_ORIGINAL/1712267.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+header {
+    margin: 35px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+.navigation li {
+    font-size: 20px;
+    margin: 2px 10px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    text-decoration: none;
+}
+
+.navigation {
+    float: right;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+}
+
+footer {
+    padding-top: 320px;
+    text-align: center;
+}
+
+footer li{
+    margin: 0px 200px;
+    font-size: 20px;
+}

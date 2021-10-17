@@ -1,0 +1,52 @@
+
+   
+html {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: purple;
+  background: linear-gradient(45deg,#2f1c53,#a46dff,#f6d1fd);
+  font-weight: 500;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+header {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-block-end: 0.2em;
+  font-size: 3.5rem;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  padding: 0px 0px;
+}
+
+hr {
+  border: dashed 1px;
+  border-bottom: none;
+  width: 100%;
+  margin: 10px auto 10px auto;
+}
+
+span {
+  font-weight: bold;
+}
+
+.date {
+  font-weight: bold;
+  margin: auto 25px auto 25px;
+}
+
+main ul li{
+  padding: 2px 60px;
+}
+
+

@@ -1,0 +1,46 @@
+body {
+    background-image: url(https://fabricelamirault.com/wp-content/uploads/2019/04/avengers-captain-america-chris-evans.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+ul {
+    font-size: 20px;
+    list-style: none;
+    float: right;
+    padding-right: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+}
+
+li {
+    margin-right: 60px;
+}
+
+main {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 60em;
+    min-height: 32em;
+    font-family: serif;
+}
+
+h1{
+    text-align: center;
+    padding: 215px 265px;
+    color: white;
+    font-size: 40px;
+}
+p{
+    float: left;
+    padding-left: 700px;
+    color: white;
+}

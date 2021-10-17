@@ -1,0 +1,61 @@
+
+
+.left {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #fafafa;
+    height: 600px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+.left h1 {
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.email, .password {
+    background-color: #eeeeee;
+    padding: 5px 60px 5px 5px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.forgotPassword {
+    padding: 0px 50px 0px 0px;
+}
+
+.logIn {
+    padding: 5px 100px 5px 100px;
+    margin: 20px;
+    background-color: #9c27b0;
+    color: white;
+    border: none;
+}
+
+i {
+    margin: 15px;
+}
+.rigth {
+    width: 50%;
+    float: right;
+    text-align: center;
+    height: 600px;
+    background: linear-gradient(135deg,#2a183a, #8b269e);
+    color: white;
+    padding-top: 100px;
+}
+
+button {
+    color: white;
+    /* opacity:.1; */
+    border-radius: 10px;
+    border: 0px solid white ;  
+}
