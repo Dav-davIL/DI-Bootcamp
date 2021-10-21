@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    
+    <script>
+        let grade = window.prompt("Please enter a verb: ");
+        let gradeLength = grade.length;
+
+        if (gradeLength >= 3 && grade.endsWith("ing") != true) {
+            console.log(grade+"ing");
+        }
+        else if (gradeLength >= 3 && grade.endsWith("ing") == true) {
+            console.log(grade + "ly");
+        } 
+        else if (gradeLength < 3) {
+            console.log(grade);
+        }
+        
+    </script>
+</body>
+</html>
