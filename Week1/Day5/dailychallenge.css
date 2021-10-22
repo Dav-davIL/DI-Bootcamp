@@ -1,0 +1,207 @@
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    
+    body {
+        background-image: url(https://fabricelamirault.com/wp-content/uploads/2019/04/avengers-captain-america-chris-evans.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0vh;
+    }
+    
+    ul {
+        font-size: 11px;
+        list-style: none;
+        float: right;
+        padding-right: 10px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    ul li {
+        display: inline;
+    }
+        
+    li {
+        margin-right: 60px;
+    }
+    
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 60em;
+        min-height: 32em;
+        font-family: serif;
+    }
+    
+    h1{
+        text-align: center;
+        padding: 215px 265px;
+        color: white;
+        font-size: 40px;
+    }
+    p{
+        float: left;
+        padding-left: 700px;
+        color: white;
+    }
+ }
+
+ @media all and (min-width: 768px) and (max-width: 1024px) { 
+   
+    
+    body {
+        background-image: url(https://fabricelamirault.com/wp-content/uploads/2019/04/avengers-captain-america-chris-evans.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        width: 130vw;
+    }
+    
+    ul {
+        font-size: 14px;
+        list-style: none;
+        float: right;
+        padding-right: 85px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    ul li {
+        display: inline;
+    }
+        
+    li {
+        margin-right: 25px;
+    }
+    
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 60em;
+        min-height: 32em;
+        font-family: serif;
+    }
+    
+    h1{
+        text-align: center;
+        padding: 215px 265px;
+        color: white;
+        font-size: 40px;
+    }
+    p{
+        float: left;
+        padding-left: 490px;
+        color: white;
+        padding-right: 164px;
+    }
+ }
+
+ @media all and (min-width: 480px) and (max-width: 768px) {
+    body {
+        background-image: url(https://fabricelamirault.com/wp-content/uploads/2019/04/avengers-captain-america-chris-evans.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0px;
+        width: 145vw;
+    }
+    
+    ul {
+        font-size: 14px;
+        list-style: none;
+        float: right;
+        padding-right: 80px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    ul li {
+        display: inline;
+    }
+        
+    li {
+        margin-right: 25px;
+    }
+    
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 56em;
+        min-height: 48em;
+        font-family: serif;
+    }
+    
+    h1{
+        text-align: center;
+        padding: 244px;
+        color: white;
+        font-size: 40px;
+    }
+    p{
+        float: left;
+        padding-left: 564px;
+        color: white;
+        padding-right: 0px;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    body {
+        background-image: url(https://fabricelamirault.com/wp-content/uploads/2019/04/avengers-captain-america-chris-evans.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0px;
+        width: 146vw;
+    }
+    
+    ul {
+        font-size: 14px;
+        list-style: none;
+        float: right;
+        padding-right: 0px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    ul li {
+        display: inline;
+    }
+        
+    li {
+        margin-right: 25px;
+    }
+    
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 48em;
+        min-height: 32em;
+        font-family: serif;
+    }
+    
+    h1{
+        text-align: center;
+        padding: 215px 128px;
+        color: white;
+        font-size: 40px;
+    }
+    p{
+        float: left;
+        padding-left: 362px;
+        color: white;
+        padding-right: 164px;
+    }
+   }

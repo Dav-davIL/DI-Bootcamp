@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <script>
+        // Create an object called family with a few key value pairs.
+        const family = {
+            familyName: "John",
+            people: ["david", "yael", "avital"],
+            city: "New York",
+            address: "NY street"
+        };
+
+        // Console.log the keys. (using a for loop).
+        
+        for (let x in family) {
+            console.log(Object.keys(family)[x]);
+        }
+
+        // Console.log the values. (using a for loop).
+        for (let x in family) {
+            console.log(family[x]);
+        }
+    </script>
+</body>
+</html>

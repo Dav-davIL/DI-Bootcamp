@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <script>
+        let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+        names.sort();
+
+        let secret = ''
+        for (let x=0; x<names.length;x++)
+        {
+            secret = secret + names[x][0];
+        }
+        console.log(secret);
+    </script>
+</body>
+</html>
