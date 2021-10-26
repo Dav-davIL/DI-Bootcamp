@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <script>
+        // Part I
+        // Create a function called infoAboutMe() that takes no parameter.
+        function infoAboutMe()
+        {
+            return console.log("I'm David. I am 31 years old. I am leaning javascript.");
+        }
+
+        // Call the function
+        infoAboutMe();
+
+        // Part II
+        // Create a function called infoAboutPerson(personName, personAge, personFavoriteColor) that takes 3 parameters.
+        function infoAboutPerson(personName, personAge, personFavoriteColor)
+        {
+            return console.log("I'm " + personName + '. I am ' + personAge + '. My favorite color is ' + personFavoriteColor)
+        }
+
+        infoAboutPerson("David", 45, "blue")
+        infoAboutPerson("Josh", 12, "yellow")
+
+        // Part III
+        function infoAboutPerson(personName, personAge, personFavoriteColor, personHobbies)
+        { 
+            let text = '';
+            for (let x in personHobbies)
+            {
+                text += personHobbies[x] + ", ";
+            }
+            return console.log("You name is " + personName + ", you are " + toString(personAge) + " years old, your favorite color is " + personFavoriteColor + ". Your hobbies are " + text)
+        }
+        
+
+        infoAboutPerson("David", 45, "blue", ["tennis", "painting"])
+        infoAboutPerson("Josh", 12, "yellow", ["videoGame", "hanging out with friends", "playing cards"])
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    
+    <script>
+        
+        function checkDriverAge()
+        {
+            let age = Number(window.prompt("How old are you?"));
+            if (age === 18)
+            {
+                console.log("Congratulations on your first year of driving. Enjoy the ride!");
+            }
+            else 
+            {
+                if (age <18)
+                {
+                    console.log("Sorry, you are too young to drive this car. Powering off");
+                }
+                else
+                {
+                    console.log("You are old enough to drive, Powering On. Enjoy the ride!");
+                }
+            }
+
+        }
+
+        checkDriverAge()
+
+        // Instead of using prompt to ask the user for their age, have the checkDriverAge() function accept a parameter age.
+        function checkDriverAge(age)
+        {
+            if (age === 18)
+            {
+                console.log("Congratulations on your first year of driving. Enjoy the ride!");
+            }
+            else 
+            {
+                if (age <18)
+                {
+                    console.log("Sorry, you are too young to drive this car. Powering off");
+                }
+                else
+                {
+                    console.log("You are old enough to drive, Powering On. Enjoy the ride!");
+                }
+            }
+
+        }
+
+        checkDriverAge(18);
+        checkDriverAge(17);
+        checkDriverAge(19);
+    </script>
+</body>
+</html>

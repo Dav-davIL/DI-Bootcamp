@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+<body>
+    
+    <script>
+        let amazonBasket = {
+        glasses: 1,
+        books: 2,
+        floss: 100
+        }
+
+        function checkBasket()
+        {
+            let inTheBasket = window.prompt("Please enter an item: ");
+            for (let x = 0; x< Object.keys(amazonBasket).length; x++)
+            {
+                if (inTheBasket == Object.keys(amazonBasket)[x])
+                {
+                    console.log(inTheBasket + " are in the basket");
+                }
+            }
+        }
+        
+        checkBasket();
+
+    </script>
+</body>
+</html>

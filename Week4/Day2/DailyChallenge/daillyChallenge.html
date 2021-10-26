@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge</title>
+</head>
+<body>
+    <script>
+        let words = prompt("Enter several words (separated by commas).");
+        const arrayWords = words.split(", ");
+
+        let max = 0;
+        for (let x in arrayWords)
+        {
+            if (arrayWords[x].length > max)
+            {
+                max = arrayWords[x].length;
+            }
+        }
+        console.log(max);
+
+
+        let value = 0;
+        let row1 = " * ".repeat(max+2);
+        console.log(row1);
+        for (let y in arrayWords)
+        {
+            if (arrayWords[y].length < row1.length)
+            {
+                value = (row1.length - arrayWords[y].length)/2;
+                console.log(" * " + " ".repeat(value-3) + arrayWords[y] + " ".repeat(value-3) + " *");
+            }
+
+        }
+        console.log(row1);
+
+    </script>
+</body>
+</html>

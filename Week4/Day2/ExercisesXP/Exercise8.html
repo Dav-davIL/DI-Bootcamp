@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+</head>
+<body>
+    <script>
+        const quarters = 0.25;
+        const dimes = 0.10;
+        const nickel = 0.05;
+        const penny = 0.01;
+
+        function changeEnough(price, array)
+        {
+            let bill = array[0]*quarters + array[1]*dimes + array[2]*nickel + array[3]*penny;
+            let result;
+            if (bill >= price)
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+            return console.log(result);
+        }
+
+        changeEnough(4.25, [25, 20, 5, 0])
+        changeEnough(14.11, [2,100,0,0])
+        changeEnough(0.75, [0,0,20,5])
+    </script>
+</body>
+</html>

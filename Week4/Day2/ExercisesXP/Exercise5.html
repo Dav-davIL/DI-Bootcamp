@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    
+    <script>
+        function isDivisible()
+        {
+            let sum = 0;
+            let outcome = '';
+            for (let x=0; x<=500; x++)
+            {
+                if (x%23==0)
+                {
+                    outcome += x + ' ' ;
+                    sum += x;
+                }
+            }
+            console.log("outcome: " + outcome);
+            console.log("Sum: " + sum);
+        }
+
+        isDivisible()
+
+        // Add a parameter divisor to the function.
+        
+        function isDivisible(divisor)
+        {
+            let sum = 0;
+            let outcome = '';
+            for (let x=0; x<=500; x++)
+            {
+                if (x%divisor==0)
+                {
+                    outcome += x + ' ' ;
+                    sum += x;
+                }
+            }
+            console.log("outcome: " + outcome);
+            console.log("Sum: " + sum);
+        }
+
+        isDivisible(3);
+        isDivisible(45);
+    </script>
+</body>
+</html>

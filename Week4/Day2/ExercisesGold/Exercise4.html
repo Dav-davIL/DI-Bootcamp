@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <script>
+        function isOmnipresent(array, value)
+        {
+            let result;
+            for (let x = 0; x<array.length;x++)
+            {
+                for (let y=0; y<array[x].length;y++)
+                {
+                    if (array[x][y] == value)
+                    {
+                        result  = true;
+                        console.log(result)
+                        break;
+                    }
+                    else
+                    {
+                        result = false;
+                        console.log(result)
+                        // break;
+                    }
+
+                }
+            }
+            return console.log(result);
+        }
+
+        isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1)
+        isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 6)
+    </script>
+</body>
+</html>

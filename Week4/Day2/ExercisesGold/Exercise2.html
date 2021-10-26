@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <script>
+        function abbrevName(text)
+        {
+            text = text.split(" ");
+            let abbrevation = text[text.length-1];
+            abbrevation.toUpperCase();
+            abbrevation = abbrevation[0];
+            abbrevation = abbrevation + ". ";
+            text.splice(text.length-1, text.length-1, abbrevation);
+            return text.join(" ");
+        }
+
+        console.log(abbrevName("Robin Singh"))
+    </script>
+</body>
+</html>

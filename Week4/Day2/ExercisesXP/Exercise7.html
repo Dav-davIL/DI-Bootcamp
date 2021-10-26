@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    
+    <script>
+        let stock = { 
+            "banana": 6, 
+            "apple": 0,
+            "pear": 12,
+            "orange": 32,
+            "blueberry":1
+        }  
+
+        let prices = {    
+            "banana": 4, 
+            "apple": 2, 
+            "pear": 1,
+            "orange": 1.5,
+            "blueberry":10
+        } 
+
+        let shoppingList = ["banana", "orange", "apple"];
+        let sum = 0;
+        function myBill() 
+        {
+            let intermediate;
+            for (let x in Object.keys(stock))
+            {
+                for (let y in shoppingList)
+                {
+                    if (shoppingList[y] == Object.keys(stock)[x])
+                    {
+                        if (stock[shoppingList[y]] > 0)
+                        {
+                            sum +=prices[shoppingList[y]];
+                        }
+                    }
+                    
+                }
+            }
+            return console.log(sum);
+        }
+        
+        myBill()
+
+
+    </script>
+</body>
+</html>
