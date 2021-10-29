@@ -8,13 +8,77 @@
 </head>
 <body>
     <script>
+        let hotel = 0;
+        let planeRide = 0;
+        let rentalCar = 0;
+
         function hotelCost()
         {
-            do
+            var nightNumber = parseInt(prompt("How many nights do you want to say?"));
+            if (isNaN(nightNumber))
             {
-                nights = prompt("How many nights?");
-            } while (isNaN(nights) === true || nights.length === 0);
+                return hotelCost();
+            }
+            else
+            {
+                hotel =  nightNumber*140;
+                return hotel;
+            }
         }
+
+        function planeRideCost()
+        {
+            var destination = prompt("Which destination you would like to go?");
+            if (!isNaN(destination))
+            {
+                return  planeRideCost();
+            } 
+            else
+            {
+                destination = destination.toLowerCase();
+                switch (destination) {
+                    case "london":
+                        planeRide = 183;
+                    break;
+                    case "paris": 
+                        planeRide = 220;
+                    break;
+                    default:
+                        planeRide = 300;
+                }
+
+                return planeRide;
+            }
+
+        }
+
+        function rentalCarCost()
+        {
+            var daysRentalCar = parseInt(prompt("How many days would you like to rent?"));
+            if (isNaN(daysRentalCar))
+            {
+                return rentalCarCost();
+            }
+            else
+            {
+                var discount = 1;
+                if (daysRentalCar > 10)
+                {
+                    discount = (1-0.05);
+                }
+                rentalCar = 40 * daysRentalCar * discount ;
+                return rentalCar;
+            }
+        }
+
+        function totalVacationCost()
+        {
+            hotelCost();
+            planeRideCost();
+            rentalCarCost();
+            alert("The car cost: "+ rentalCar + ", the hotel cost: " + hotel + ", the plane tickets cost: " +planeRide);
+        }
+
     </script>
 </body>
 </html>
