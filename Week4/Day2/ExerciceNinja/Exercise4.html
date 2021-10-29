@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <script>
+        function biggestNumberInArray(arrayNumber)
+        {
+            var max = -1000000;
+            if (arrayNumber.length == 0)
+            {
+                return console.log(0);
+            }
+            else
+            {
+                for (let y in arrayNumber)
+                {
+                    if (isNaN(arrayNumber[y]) )
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        if (max < arrayNumber[y])
+                        {
+                            max = arrayNumber[y];
+                        }
+                    }
+                }
+                return console.log(max);
+            }
+
+            
+        }
+
+        const array = [-1,0,3,100, 99, 2, 99] ;// should return 100 
+        const array2 = ['a', 3, 4, 2]; // should return 4 
+        const array3 = [];
+    </script>
+</body>
+</html>

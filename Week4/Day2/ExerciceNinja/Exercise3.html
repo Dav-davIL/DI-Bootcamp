@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <script>
+
+        function isPalindrom(word)
+        {
+            
+            if (word.length % 2 == 0)
+            {
+                return alert("This word is not a polyndrom");
+            }
+            else{
+                var wordMiddle = Math.round(word.length/2)-1;
+                for (let x=1; x <=Math.floor(word.length/2); x++)
+                {
+                    if (word[wordMiddle+x] != word[wordMiddle-x])
+                    {
+                        return alert("This word is not a polyndrom");
+                        break;
+                    }
+                    return true;
+                }
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
