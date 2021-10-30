@@ -1,0 +1,39 @@
+body {
+    width: 300px;
+}
+
+button {
+    cursor: pointer;
+}
+#ShowResult {
+    width: 290px;
+    height: 70px;
+    border: 1px solid;
+}
+
+#result{
+    float: right;
+    margin: 45px 5px 0px 9px;
+    font-size: 20px;
+}
+
+#numbers {
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+}
+
+#operator {
+    background-color: orange;
+    color: white;
+    border: 1px solid white;
+}
+
+#clear {
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    width: 144px;
+}
+
+

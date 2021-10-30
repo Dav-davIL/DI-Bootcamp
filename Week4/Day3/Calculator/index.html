@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      button {
+        width:70px;
+        height:50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ShowResult"><div id="result"></div></div>
+    <div id="command">
+    <button id="numbers" type="button" name="button" onclick="number(0)">0</button>
+    <button id="numbers" type="button" name="button" onclick="number(1)">1</button>
+    <button id="numbers" type="button" name="button" onclick="number(2)">2</button>
+    <button id="numbers" type="button" name="button" onclick="number(3)">3</button>
+    <button id="numbers" type="button" name="button" onclick="number(4)">4</button>
+    <button id="numbers" type="button" name="button" onclick="number(5)">5</button>
+    <button id="numbers" type="button" name="button" onclick="number(6)">6</button>
+    <button id="numbers" type="button" name="button" onclick="number(7)">7</button>
+    <button id="numbers" type="button" name="button" onclick="number(8)">8</button>
+    <button id="numbers" type="button" name="button" onclick="number(9)">9</button>
+    <button id="numbers" type="button" name="button" onclick="number(.)">.</button>
+    <button id="operator" type="button" name="button" onclick="operator('+')">+</button>
+    <button id="operator" type="button" name="button" onclick="operator('-')">-</button>
+    <button id="operator" type="button" name="button" onclick="operator('*')">*</button>
+    <button id="operator" type="button" name="button" onclick="operator('/')">/</button>
+    <button id="operator" type="button" name="button" onclick="equal()">=</button>
+    <button id="clear" type="button" name="button" onclick=reset()>Reset</button>
+    <button id="clear" type="button" name="button" onclick=clear()>Clear</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

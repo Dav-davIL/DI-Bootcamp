@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <div id="container">Users:</div>
+    <ul class="list">
+        <li>John</li>
+        <li>Pete</li>
+    </ul>
+    <ul class="list">
+        <li>David</li>
+        <li>Sarah</li>
+        <li>Dan</li>
+    </ul>
+
+    <script>
+        document.getElementsByClassName("list");
+
+        document.getElementsByClassName("list")[0].getElementsByTagName("li")[1].innerHTML = "Richard";
+
+        for (let y in document.querySelectorAll("ul").length)
+        {
+            document.querySelectorAll("ul")[y].getElementsByTagName("li")[0].innerHTML = "David";
+        }
+
+        
+        var li = document.createElement("li");
+        var text = document.createTextNode("Hey students");
+        li.appendChild(text);
+        document.body.getElementsByTagName("ul")[0].appendChild(li);
+        document.body.getElementsByTagName("ul")[1].appendChild(li);
+
+        var SarahRemove = document.getElementsByClassName("list")[1];   
+        SarahRemove.removeChild(SarahRemove.childNodes[2]);  
+        
+    </script>
+</body>
+</html>
