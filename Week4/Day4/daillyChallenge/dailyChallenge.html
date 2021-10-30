@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dailly challenge</title>
+</head>
+<body>
+    <script>
+        let bottleNumber = parseInt(prompt("How many bottle?"));
+        let x = 1;
+        function numberOfBottle(bottleNumber)
+        {
+            console.log(bottleNumber +" bottles of beer on the wall");
+            console.log(bottleNumber + " bottles of beer");
+            console.log("Take " + x + " down, pass it around");
+        }
+
+        do
+        {
+            numberOfBottle(bottleNumber,x);
+            bottleNumber -= x ;
+            x++;
+        } while(bottleNumber>=0);
+        
+    </script>
+</body>
+</html>
