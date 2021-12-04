@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit" id="submit">
+      </form> 
+      <ul class="usersAnswer"></ul>
+
+    <script>
+        // Retrieve the form and console.log it.
+        let form = document.querySelector("form")
+        console.log(form)
+
+        // Retrieve the inputs by their id and console.log them.
+        var elementsForm = form.elements;
+        for (var i=0; i<elementsForm.length;i++)
+        {
+            console.log(elementsForm[i]);
+            console.log(elementsForm[i].name);
+        }
+
+        form.addEventListener("submit",function101)
+            function function101(e){
+                e.preventDefault()
+                let inputValue1 = form.elements[0].value
+                let inputValue2 = form.elements[1].value
+                if (inputValue1&&inputValue2){
+                    // let li = document.createElement("li")
+                    // let textNode = document.createTextNode(`${inputValue1} ${inputValue2}`)
+                    // li.append(textNode)
+                    // let ul = document.querySelector("ul")
+                    // ul.append(li)
+                    for (let a = 0;a<e.target.elements.length-1;a++){
+                        let currentInput = e.target.elements[a];
+                        let li = document.createElement("li")
+                        let textNode = document.createTextNode(currentInput.value)
+                        li.append(textNode)
+                        let ul = document.querySelector("ul")
+                        ul.append(li)
+                    }
+                }}
+    </script>
+</body>
+</html>

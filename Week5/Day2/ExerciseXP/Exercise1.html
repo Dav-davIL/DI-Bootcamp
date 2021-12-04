@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <article>
+        <h1> Some Facts </h1>
+        <h2> The Chocolate </h2>
+        <h3> History of the chocolate </h3>
+        <p> Chocolate is made from tropical Theobroma cacao tree seeds. 
+        Its earliest use dates back to the Olmec civilization in Mesoamerica.</p>
+        <p> After the European discovery of the Americas, chocolate became 
+        very popular in the wider world, and its demand exploded. </p>
+        <p> Chocolate has since become a popular food product that millions enjoy every day, 
+        thanks to its unique, rich, and sweet taste.</p> 
+        <p> But what effect does eating chocolate have on our health?</p> 
+    </article>
+
+    <script>
+        // Using a DOM property, retrieve the h1 and console.log it.
+        console.log(document.querySelector("h1"));
+
+        // Using DOM methods, remove the last paragraph in the <article> tag.
+        let pList = document.querySelectorAll("p");
+        let pList_length = pList.length;
+        let article = document.querySelector("article");
+        article.removeChild(pList[pList_length-1]);
+
+        // Add a event listener which will change the background color of the h2 to red, when it’s clicked on.
+        let h2 = document.querySelector("h2");
+        h2.addEventListener("click",function(){h2.style.color = "red"});
+
+        // Add an event listener which will hide the h3 when it’s clicked on
+        let h3 = document.querySelector("h3");
+        h3.addEventListener("click",function(){h3.style.display = "none"});
+
+        // Add a <button> to the HTML file, that when clicked on, should make the text of all the paragraphs, bold.
+        const button = document.createElement("button");
+        const text = document.createTextNode("Click");
+        button.appendChild(text);
+        article.appendChild(button)
+        button.addEventListener("click",function(){
+            var allP = document.querySelectorAll("p");
+            for (var i=0;i<allP.length;i++){
+                allP[i].style.fontWeight = "bold"; 
+            }
+        });
+    </script>
+</body>
+</html>

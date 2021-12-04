@@ -1,0 +1,79 @@
+body {
+    background-image: url(https://heycarson.com/blog/wp-content/uploads/2019/07/world-map-1024x538.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.number {
+    margin-bottom: 0px;
+}
+.number > li {
+    padding: 31px 91px 0px 43px;
+    font-size: 4em;
+}
+
+.text {
+    margin-top: 0px;
+}
+
+.text > li {
+    padding: 5px 183px 20px 32px;
+    font-size: 1em;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill,minmax(330px,2fr));
+}
+
+.box {
+    background-color: #fff;
+    padding: 15px;
+    margin: 20px;
+    margin-top: 2em;
+    height: 75vh;
+}
+
+.details {
+    padding: 0px 100px;
+}
+
+.zone {
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.middle {
+    margin-top: 4em;
+}
+
+.third {
+    margin-top: 8em;
+}
