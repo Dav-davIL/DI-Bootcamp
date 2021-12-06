@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <script>
+        // Add an input that has a type="email" to your form.
+        let body = document.querySelector("body");
+        let input_email = document.createElement("input");
+        input_email.setAttribute("type","email");
+        body.appendChild(input_email);
+
+        let button = document.createElement("button");
+        let button_text = document.createTextNode("Submit");
+        button.appendChild(button_text);
+        body.appendChild(button);
+
+        // Write your own javascript validation function to check if the entered value is a valid email address.
+        function checkEmail(){
+            let email = input_email.value;
+            let position = email.search('@');
+            // check if we have the @
+            if (position == -1 ){
+                return alert("Email invalid");
+            }
+            else {
+                // check if we have some text before and after the @
+                let rightSide = email.substring(position+1,email.length);
+                let leftSide = email.substring(0,position);
+                if (leftSide.length > 0 && rightSide.length>0){
+                    // check if we have the "." in the right side
+                    let position_point = rightSide.indexOf(".");
+                    if (position_point == -1) {
+                        return alert("email invalid");
+                    }
+                    else {
+                        let rightSide_afterDot = rightSide.substring(position_point+1,rightSide.length);
+                        let leftSide_afterDot = rightSide.substring(0,position_point);
+                        if (rightSide_afterDot.length<=0 && leftSide_afterDot<=0) {
+                            return alert("Email invalid");
+                        } 
+                        else {
+                            return alert("Email valid");
+                        }
+                    }
+                } 
+                else {
+                    return alert("Email invalid");
+                }
+            }
+            
+            
+            
+        }
+        
+        button.addEventListener("click", checkEmail);
+    </script>
+</body>
+</html>
