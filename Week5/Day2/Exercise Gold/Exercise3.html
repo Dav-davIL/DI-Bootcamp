@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+        let shoppingList = [];
+
+        // Create a form containing : a text input field and an “AddItem” button. Add this form to the DOM.
+        let div = document.getElementById("root");
+        let input_text = document.createElement("input");
+        input_text.setAttribute("type","text");
+        div.appendChild(input_text);
+
+        let button = document.createElement("button");
+        let text_button = document.createTextNode("Add items");
+        button.appendChild(text_button);
+        div.appendChild(button);
+
+        // add the new item to the array as soon as you click on the “AddItem” button
+        let ul = document.createElement("ul");
+        let body = document.querySelector("body");
+        body.appendChild(ul);
+        function addItems() {
+            let li = document.createElement("li");
+            let text_li = document.createTextNode(input_text.value);
+            li.appendChild(text_li);
+            ul.appendChild(li);
+        }
+
+        button.addEventListener("click", addItems);
+
+        // Add a “ClearAll” button to the DOM
+        let button_clearALL = document.createElement("button");
+        let text_ClearALL = document.createTextNode("Clear ALL");
+        button_clearALL.appendChild(text_ClearALL);
+        div.appendChild(button_clearALL);
+
+        // Create a function named clearAll() that should clear out all the items in the shopping list.
+        function clearALL() {
+            let all_li = document.querySelectorAll("li");
+            for (let i=0; i<all_li.length;i++) {
+                all_li[i].remove();
+            }
+        }
+        button_clearALL.addEventListener("click", clearALL);
+    </script>
+</body>
+</html>
