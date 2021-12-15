@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+    <style>
+        .add-plus{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: #BDFCED;
+            color: #00DECF;
+            font-size: 50px;
+            vertical-align: middle;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="add-plus" onclick=addSquare()>+</button>
+</body>
+<script>
+    function addSquare() {
+        let body = document.querySelector("body");
+        let div = document.createElement("div");
+        div.style.float = "left";
+        div.style.width = "100px";
+        div.style.height = "100px";
+        div.style.background = "#BDFCED";
+        body.appendChild(div);
+    }
+    
+</script>
+</html>
